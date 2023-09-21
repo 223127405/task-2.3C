@@ -1,12 +1,21 @@
 <template>
   <div id="app">
     <router-view></router-view>
+    <ToDoList />
+    <TaskItem />
   </div>
 </template>
 
 <script>
+import ToDoList from './components/ToDoList.vue';
+import TaskItem from './components/TaskItem.vue';
+
 export default {
   name: 'App',
+  components: {
+    ToDoList,
+    TaskItem
+  }
 };
 </script>
 
